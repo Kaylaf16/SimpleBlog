@@ -17,7 +17,7 @@ app.use(controllers);
 
 
 //connecting to the database and ensuring it is up and running before starting the server
-db.connect('mongodb://kaylaf:one@ds053206.mlab.com:53206/simpleblog', function(err){
+db.connect('', function(err){
   if (err){
     console.log('connection failed');
   }
