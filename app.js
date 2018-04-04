@@ -1,4 +1,4 @@
-//const models = require('./model');
+
 const express = require('express');
 const bodyParser = require('body-parser');
 var MongoClient = require('mongodb').MongoClient;
@@ -7,10 +7,10 @@ var db = require('./config/config');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-//app.set('view engine','ejs');
+
 app.use(express.static("public"));
 
-//app.use('/', express.static('public'));
+
 //loading in all of the controllers
 var controllers = require('./controllers');
 app.use(controllers);
